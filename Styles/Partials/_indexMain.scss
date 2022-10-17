@@ -24,7 +24,7 @@
             left: 55%;
         }
     }
-    .donarButton{
+    .defaultButton{
         @include buttonDefault ($bgColor: white, $letterColor: black);
         &:hover{
             @include buttonDefaultHover;
