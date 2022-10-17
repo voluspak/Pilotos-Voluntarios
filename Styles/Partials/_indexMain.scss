@@ -1,0 +1,27 @@
+.indexMainContainer{
+    .indexImgContainer{
+        overflow: hidden;
+        position: relative;
+        box-shadow: 2px 5px 9px #000;
+        width: 90%;
+        padding: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            color: red;
+            position: absolute;
+            top: 10%;
+            left: 58%;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        }
+        span{
+            position: absolute;
+            color: white;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+            top: 55%;
+            left: 55%;
+        }
+    }
+}
