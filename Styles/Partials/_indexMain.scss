@@ -24,4 +24,16 @@
             left: 55%;
         }
     }
+    .donarButton{
+        @include buttonDefault ($bgColor: white, $letterColor: black);
+        &:hover{
+            @include buttonDefaultHover;
+        }
+        &:active{
+            @include buttonDefaultActive;
+        }
+        &:focus{
+            @include buttonDefaultFocus;
+        }
+    }
 }
