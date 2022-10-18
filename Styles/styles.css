@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+*:not(.fa-brands, .fa-solid), ::before:not(.fa-brands, .fa-solid), ::after:not(.fa-brands, .fa-solid) {
+  font-family: "Unna", serif;
+}
 
 .headerContainer .navContainer nav {
   display: flex;
@@ -53,7 +56,7 @@
   overflow: hidden;
   position: relative;
   box-shadow: 2px 5px 9px #000;
-  width: 90%;
+  width: 95%;
   padding: 0;
 }
 .indexMainContainer .indexImgContainer img {
@@ -61,6 +64,7 @@
   height: 100%;
 }
 .indexMainContainer .indexImgContainer h1 {
+  font-family: "Crimson Text";
   color: red;
   position: absolute;
   top: 10%;
@@ -68,6 +72,7 @@
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 .indexMainContainer .indexImgContainer span {
+  font-family: "Alike Angular";
   position: absolute;
   color: white;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
@@ -117,4 +122,60 @@
 }
 .indexMainContainer .defaultButton:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+footer .siteMap h4 {
+  color: rgb(77, 76, 76);
+  font-family: "Crimson Text";
+  font-size: 1.8rem;
+}
+footer .siteMap ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+footer .siteMap ul li {
+  padding: 0.5rem;
+}
+footer .siteMap ul li a {
+  color: gray;
+  text-decoration: none;
+  font-size: 1rem;
+}
+footer .copyright {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+footer .copyright ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.8rem;
+}
+footer .copyright ul li {
+  margin: 0.3rem;
+}
+footer .copyright ul li a {
+  color: gray;
+  font-size: 2rem;
+}
+footer .copyright h4, footer .copyright h5 {
+  font-size: 1rem;
+  color: rgb(53, 52, 52);
+  font-family: "Alike Angular";
+}
+footer .copyright h4 {
+  font-weight: bold;
+}
+footer .copyright h5 {
+  align-self: flex-end;
+}
+footer .copyright h5 a {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,59 @@
+footer{
+    .siteMap{
+        h4{
+            color: rgb(77, 76, 76);
+            font-family: map-get($fonts, titleFont);
+            font-size: 1.8rem;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+            li{
+                padding: .5rem;
+                a{
+                    color: gray;
+                    text-decoration: none;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .copyright{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        ul{
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1.8rem;
+            li{
+                margin: .3rem;
+                a{
+                    color: gray;
+                    font-size: 2rem;
+                }
+            }
+        }
+        h4, h5{
+            font-size: 1rem;
+            color: rgb(53, 52, 52);
+            font-family: map-get($fonts, subTitleFont);
+        }
+        h4{
+            font-weight: bold;
+        }
+        h5{
+            align-self: flex-end;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
