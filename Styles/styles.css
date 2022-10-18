@@ -1,10 +1,17 @@
+.indexMainContainer .poblaciones h3, .indexMainContainer .how2Help h2, .indexMainContainer .necesidad h3, .indexMainContainer .bgDiv .visionSec h2, .indexMainContainer .bgDiv .visionSec h3, .indexMainContainer .pqHacerlo h2, .indexMainContainer .pqHacerlo h3 {
+  font-family: "Alike Angular", serif;
+  font-size: 1.8rem;
+}
+
+.indexMainContainer .poblaciones ul li, .indexMainContainer .how2Help p, .indexMainContainer .how2Help span, .indexMainContainer .necesidad p, .indexMainContainer .bgDiv .visionSec p, .indexMainContainer .pqHacerlo p {
+  font-family: "Unna", serif;
+  font-size: 1.3rem;
+}
+
 *, ::before, ::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-*:not(.fa-brands, .fa-solid), ::before:not(.fa-brands, .fa-solid), ::after:not(.fa-brands, .fa-solid) {
-  font-family: "Unna", serif;
 }
 
 .headerContainer .navContainer nav {
@@ -65,7 +72,8 @@
 }
 .indexMainContainer .indexImgContainer h1 {
   font-family: "Crimson Text";
-  color: red;
+  color: rgb(245, 27, 59);
+  font-size: 2rem;
   position: absolute;
   top: 10%;
   left: 58%;
@@ -74,22 +82,26 @@
 .indexMainContainer .indexImgContainer span {
   font-family: "Alike Angular";
   position: absolute;
-  color: white;
+  color: rgb(241, 231, 196);
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  top: 55%;
-  left: 55%;
+  top: 60%;
+  left: 57%;
 }
-.indexMainContainer .defaultButton {
+.indexMainContainer .firtDonation p, .indexMainContainer .firtDonation button {
+  font-family: "Unna";
+  font-size: 1.4rem;
+}
+.indexMainContainer .firtDonation .participarButton {
   align-items: center;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: white;
+  background-color: rgb(245, 27, 59);
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(167, 23, 45) 0 -3px 0 inset;
   box-sizing: border-box;
-  color: black;
+  color: rgb(241, 231, 196);
   cursor: pointer;
   display: inline-flex;
   height: 48px;
@@ -102,7 +114,7 @@
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow 0.15s, transform 0.15s;
+  transition: box-shadow 0.15s, transform 0.15s ease;
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
@@ -112,16 +124,131 @@
   will-change: box-shadow, transform;
   font-size: 18px;
 }
-.indexMainContainer .defaultButton:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
+.indexMainContainer .firtDonation .participarButton:focus {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
 }
-.indexMainContainer .defaultButton:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
+.indexMainContainer .firtDonation .participarButton:active {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 3px 7px inset;
   transform: translateY(2px);
 }
-.indexMainContainer .defaultButton:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+.indexMainContainer .firtDonation .participarButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.indexMainContainer .pqHacerlo {
+  margin-top: 2rem;
+}
+.indexMainContainer .pqHacerlo h2, .indexMainContainer .pqHacerlo h3 {
+  color: rgb(245, 27, 59);
+}
+.indexMainContainer .pqHacerlo h3 {
+  font-size: 1.6rem;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+}
+.indexMainContainer .pqHacerlo p {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+}
+.indexMainContainer .bgDiv {
+  background-color: rgb(245, 27, 59);
+  padding: 1rem;
+}
+.indexMainContainer .bgDiv .visionSec h2, .indexMainContainer .bgDiv .visionSec h3 {
+  color: rgb(241, 231, 196);
+}
+.indexMainContainer .bgDiv .visionSec h3 {
+  font-size: 1.6rem;
+}
+.indexMainContainer .bgDiv .visionSec p {
+  color: rgb(241, 231, 196);
+}
+.indexMainContainer .necesidad img {
+  width: 40%;
+  height: 40%;
+  float: left;
+  margin: 1rem;
+}
+.indexMainContainer .necesidad h3 {
+  color: rgb(245, 27, 59);
+}
+.indexMainContainer .necesidad p {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+}
+.indexMainContainer .necesidad .defaultButton {
+  margin-top: 1rem;
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(245, 27, 59);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(168, 21, 43) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: rgb(241, 231, 196);
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s ease;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.indexMainContainer .necesidad .defaultButton:focus {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+}
+.indexMainContainer .necesidad .defaultButton:active {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.indexMainContainer .necesidad .defaultButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.indexMainContainer .how2Help h2 {
+  color: rgb(241, 231, 196);
+}
+.indexMainContainer .how2Help h2, .indexMainContainer .how2Help span, .indexMainContainer .how2Help p {
+  color: rgb(241, 231, 196);
+}
+.indexMainContainer .poblaciones {
+  margin-top: 1rem;
+}
+.indexMainContainer .poblaciones img {
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin-right: 5px;
+}
+.indexMainContainer .poblaciones h3 {
+  color: rgb(245, 27, 59);
+}
+.indexMainContainer .poblaciones ul {
+  display: flex;
+  flex-flow: column wrap;
+}
+.indexMainContainer .poblaciones ul li {
+  text-align: left;
 }
 
 footer .siteMap h4 {

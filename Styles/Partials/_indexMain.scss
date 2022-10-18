@@ -11,33 +11,143 @@
         }
         h1{
             font-family: map-get($fonts, titleFont);
-            color: red;
+            color: map-get($colors, redColor);
+            font-size: 2rem;
             position: absolute;
             top: 10%;
             left: 58%;
             text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
         }
         span{
-            font-family: map-get($fonts , subTitleFont );
+            font-family: map-get($fonts , subTitleFont);
             position: absolute;
-            color: white;
+            color: map-get($colors, lightColor);
             text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-            top: 55%;
-            left: 55%;
+            top: 60%;
+            left: 57%;
         }
     }
-    .defaultButton{
-        @include buttonDefault ($bgColor: white, $letterColor: black);
-        &:hover{
-            @include buttonDefaultHover;
+    .firtDonation{
+        p, button{
+            font-family: map-get($fonts, textFont );
+            font-size: 1.4rem;
         }
-        &:active{
-            @include buttonDefaultActive;
+        .participarButton{
+            @include buttonDefault ($bgColor: rgb(245, 27, 59), $letterColor: rgb(241,231,196), $shadowC:rgb(167, 23, 45));
+            &:focus{
+                @include buttonDefaultFocus;
+            }
+            &:active{
+                @include buttonDefaultActive;
+            }
+            &:hover{
+                @include buttonDefaultHover;
+            }
         }
-        &:focus{
-            @include buttonDefaultFocus;
+    }
+    .pqHacerlo{
+        margin-top: 2rem;
+
+        h2, h3{
+            @extend %subTitleStandar;
+            color: map-get($colors, redColor);
+        }
+        h3{
+            font-size: 1.6rem;
+            text-align: left;
+            width: 90%;
+            margin: auto;
+            margin-top: 1rem;
+        }
+        p{
+            text-align: left;
+            @extend %textStandar;
+            width: 90%;
+            margin: auto;
+        }
+    }
+    
+    .bgDiv{
+        background-color: map-get($colors, redColor);
+        padding: 1rem;
+        .visionSec{
+            h2, h3{
+                @extend %subTitleStandar;
+                color: map-get($colors, lightColor);
+            }
+            h3{
+                font-size: 1.6rem
+            }
+            p{
+                @extend %textStandar;
+                color: map-get($colors , lightColor);
+            }
         }
     }
 
+    .necesidad{
 
+        img{
+            width: 40%;
+            height: 40%;
+            float: left; 
+            margin: 1rem; 
+        }
+        h3{
+            @extend %subTitleStandar;
+            color: map-get($colors, redColor )
+        }
+        p{
+            @extend %textStandar;
+            text-align: justify;
+            width: 90%;
+            margin: auto;
+        }
+        .defaultButton{
+            margin-top: 1rem;
+            @include buttonDefault ($bgColor: rgb(245, 27, 59), $letterColor: rgb(241,231,196), $shadowC: rgb(168, 21, 43));
+            &:focus{
+                @include buttonDefaultFocus;
+            }
+            &:active{
+                @include buttonDefaultActive;
+            }
+            &:hover{
+                @include buttonDefaultHover;
+            }
+        }
+    }
+    .how2Help{
+        h2{
+            @extend %subTitleStandar;
+            color: map-get($colors, lightColor);
+        }
+        h2, span, p{
+            color: map-get($colors, lightColor);
+        }
+        p, span{
+            @extend %textStandar;
+        }
+    }
+    .poblaciones{
+        margin-top: 1rem;
+        img{
+            width: 50%;
+            height: 100%;
+            float: left;
+            margin-right: 5px
+        }
+        h3{
+            @extend %subTitleStandar;
+            color: map-get($colors, redColor )
+        }
+        ul{
+            display: flex;
+            flex-flow: column wrap;
+            li{
+                @extend %textStandar;
+                text-align: left;
+            }
+        }
+    }
 }

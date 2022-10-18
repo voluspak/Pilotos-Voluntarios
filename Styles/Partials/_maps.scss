@@ -1,5 +1,13 @@
 $fonts:(
     titleFont: 'Crimson Text',
     subTitleFont: 'Alike Angular',
-    textFont: serif 'Unna',
+    textFont: 'Unna',
 );
+
+$colors:(
+    lightColor: rgb(241,231,196),
+    beigeColor: rgb(222,208,179),
+    mustardColor: rgb(206,199,119),
+    redColor: rgb(245, 27, 59),
+    darkColor: rgb(74,66,63)
+)
