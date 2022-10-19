@@ -16,34 +16,23 @@
                 }
             }
             .responsiveButton{
-                display: flex;
-                flex-flow: column wrap;
-                width: 2rem;
-                height: 2rem;
-                border: 0;
                 background: transparent;
-                gap: .55rem;
-                div{
-                    background-color: black;
-                    height: 2px;
-                    width: 100%;
-                    border-radius: 5px;
-                    transition: all .5s;
-                    transform-origin: left;
+                border: 0;
+                i{
+                    font-size: 2rem;
                 }
-                &:hover > div:first-child{
-                    transform: translateY(-5px);
-                    transform: rotate(45deg);
+            }
+            .responsiveUl{
+                list-style: none;
+                li{
+                    padding: 5px 0;
+                    a{
+                        text-decoration: none;
+                        @extend %textStandar;
+                        color: map-get($colors, darkColor);
+                    }
                 }
-                &:hover > div:nth-child(2){
-                    opacity: 0;
-                }
-                &:hover > div:last-child{
-                    transform: translateY(5px);
-                    transform: rotate(-45deg);
-                }
-            }    
+            }
         }
     }
-
 }
