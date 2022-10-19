@@ -250,6 +250,17 @@
 .indexMainContainer .poblaciones ul li {
   text-align: left;
 }
+.indexMainContainer .blogCardsContainer {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.indexMainContainer .blogCardsContainer div {
+  outline: auto;
+  height: 20rem;
+  width: 10rem;
+}
 
 footer .siteMap h4 {
   color: rgb(77, 76, 76);

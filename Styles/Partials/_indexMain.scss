@@ -150,4 +150,15 @@
             }
         }
     }
+    .blogCardsContainer{
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: space-around;
+        margin-top: 1rem;
+        div{
+            outline: auto;
+            height: 20rem;
+            width: 10rem;
+        }
+    }
 }
