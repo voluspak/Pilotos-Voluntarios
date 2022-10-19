@@ -1,11 +1,21 @@
-.indexMainContainer .poblaciones h3, .indexMainContainer .how2Help h2, .indexMainContainer .necesidad h3, .indexMainContainer .bgDiv .visionSec h2, .indexMainContainer .bgDiv .visionSec h3, .indexMainContainer .pqHacerlo h2, .indexMainContainer .pqHacerlo h3 {
+.teamMain .directors h2, .teamMain .fpvDescription h1 {
+  font-family: "Crimson Text", serif;
+  font-size: 2rem;
+}
+
+.teamMain .directors span, .teamMain .directors p, .teamMain .fpvDescription span, .indexMainContainer .poblaciones h3, .indexMainContainer .how2Help h2, .indexMainContainer .necesidad h3, .indexMainContainer .bgDiv .visionSec h2, .indexMainContainer .bgDiv .visionSec h3, .indexMainContainer .pqHacerlo h2, .indexMainContainer .pqHacerlo h3 {
   font-family: "Alike Angular", serif;
   font-size: 1.8rem;
 }
 
-.indexMainContainer .poblaciones ul li, .indexMainContainer .how2Help p, .indexMainContainer .how2Help span, .indexMainContainer .necesidad p, .indexMainContainer .bgDiv .visionSec p, .indexMainContainer .pqHacerlo p, .headerContainer .navContainer nav .responsiveUl li a {
+.teamMain .fpvDescription p, .indexMainContainer .poblaciones ul li, .indexMainContainer .how2Help p, .indexMainContainer .how2Help span, .indexMainContainer .necesidad p, .indexMainContainer .bgDiv .visionSec p, .indexMainContainer .pqHacerlo p, .headerContainer .navContainer nav .responsiveUl li a {
   font-family: "Unna", serif;
   font-size: 1.3rem;
+}
+
+.teamMain .directors {
+  background-color: rgb(245, 27, 59);
+  padding: 1rem;
 }
 
 *, ::before, ::after {
@@ -305,4 +315,107 @@ footer .copyright h5 {
 }
 footer .copyright h5 a {
   text-decoration: none;
+}
+
+.teamMain .fpvDescription h1 {
+  color: rgb(245, 27, 59);
+}
+.teamMain .fpvDescription span {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.teamMain .fpvDescription p {
+  margin-top: 0.5rem;
+  text-align: left;
+}
+.teamMain .fpvDescription .defaultButton {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(252, 248, 235);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(161, 22, 43) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: rgb(245, 27, 59);
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s ease;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.teamMain .fpvDescription .defaultButton:focus {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+}
+.teamMain .fpvDescription .defaultButton:active {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.teamMain .fpvDescription .defaultButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.teamMain .fpvDescription .handPlaneContainer {
+  position: relative;
+  margin: 2rem 0;
+}
+.teamMain .fpvDescription .handPlaneContainer img {
+  width: 100%;
+  height: 100%;
+}
+.teamMain .fpvDescription .handPlaneContainer p {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  font-size: 1rem;
+  text-align: center;
+}
+.teamMain .directors {
+  margin: 2rem 0;
+}
+.teamMain .directors h2 {
+  color: rgb(241, 231, 196);
+}
+.teamMain .directors span, .teamMain .directors p {
+  color: rgb(241, 231, 196);
+}
+.teamMain .directors p {
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  margin-bottom: -0.5rem;
+}
+.teamMain .directors .directorsL {
+  width: 90%;
+  height: 90%;
+  border-radius: 5%;
+}
+.teamMain .directors .directorsR, .teamMain .directors .directorsD {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  margin-top: 2rem;
+}
+.teamMain .iMap {
+  width: 100%;
+}
+.teamMain .iMap iframe {
+  width: 100%;
+  height: 16rem;
 }/*# sourceMappingURL=styles.css.map */

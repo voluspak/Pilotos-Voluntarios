@@ -1,0 +1,81 @@
+.teamMain{
+    .fpvDescription{
+        h1{
+            @extend %titleStandar;
+            color: map-get($colors, redColor);
+        }
+        span{
+            @extend %subTitleStandar;
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+        }
+        p{
+            @extend %textStandar;
+            margin-top: .5rem;
+            text-align: left;
+        }
+        .defaultButton{
+            @include buttonDefault ($bgColor: rgb(252, 248, 235),$letterColor: rgb(245, 27, 59),$shadowC: rgb(161, 22, 43));
+            &:focus{
+                @include buttonDefaultFocus;
+            }
+            &:active{
+                @include buttonDefaultActive;
+            }
+            &:hover{
+                @include buttonDefaultHover
+            }
+        }
+
+        .handPlaneContainer{
+            position: relative;
+            margin: 2rem 0;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            p{
+                position: absolute;
+                top: 0%;
+                left: 40%;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+    .directors{
+        @extend %bgDiv;
+        margin: 2rem 0;
+        h2{
+            @extend %titleStandar;
+            color: map-get($colors, lightColor );
+        }
+        span, p{
+            @extend %subTitleStandar;
+            color: map-get($colors, lightColor );
+        }
+        p{
+            font-size: 1.6rem;
+            letter-spacing: 4px;
+            margin-bottom: -.5rem;
+        }
+        .directorsL{
+            width: 90%;
+            height: 90%;
+            border-radius: 5%;
+        }
+        .directorsR, .directorsD{
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+            margin-top: 2rem;
+        }
+    }
+    .iMap{
+        width: 100%;
+        iframe{
+            width: 100%;
+            height: 16rem;
+        }
+    }
+}

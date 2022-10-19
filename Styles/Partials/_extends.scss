@@ -12,3 +12,8 @@
     font-family: 'Unna', serif;
     font-size: 1.3rem; 
 }
+
+%bgDiv{
+    background-color: map-get($colors, redColor);
+    padding: 1rem;
+}
