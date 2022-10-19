@@ -61,17 +61,24 @@
             </header>
         </div>
         <hr>
-        <main>
-            <section>
+        <main class="proyectMain">
+            <section class="my-5">
                 <h1>Proyectos y Operaciones</h1>
                 <h2>Proyecto "El ángel</h2>
-                <!-- CARRUSEL -->
-                <img src="../Assets/cessnaFront.webp" alt="Avion Cessna descompuesto, vista frontal">
-                <img src="../Assets/cessnaLat.webp" alt="Avion Cessna descompuesto, vista lateral">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Assets/cessnaFront.webp" class="d-block w-100" alt="Avioneta plano frontal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Assets/cessnaLat.webp" class="d-block w-100" alt="Avioneta plano lateral">
+                        </div>
+                    </div>
+                </div
             </section>
-            <section>
+            <section class="operations">
                 <h2>Operaciones Aéreas</h2>
-                <img src="../Assets/ventanaAvionPaisaje.webp" alt="Paisaje tropical">
+                <img src="../Assets/ventanaAvionPaisaje.webp" alt="Paisaje tropical" class="img-fluid">
                 <span><i>MISION transporte de test COVID 19</i></span>
                 <p>
                     FPV ha estado en primera linea,
@@ -82,31 +89,33 @@
                     contribuyen a mitigar las consecuencias 
                     del coronavirus en el país.
                 </p>
-                <button>Donar</button>
+                <button class="donationButton">Donar</button>
             </section>
         </main>
 
-        <footer>
-            <h4>Mapa del sitio</h4>
-            <ul>
-                <li><a href="./nuestroEquipo.html">Nuestro equipo</a></li>
-                <li><a href="./donacion.html">Donación</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#"></a>Facebook</li>
-                <li><a href="#"></a>Instagram</li>
-            </ul>
-            <h5>2020. Fundación Pilotos Voluntarios <br> RIF J-412373374</h5>
-            <h4>Designed by <a href="#"><b>Ivan Telleria</b></a></h4>
-
+        <footer class="row mt-5">
+            <div class="siteMap col-sm-12">
+                <h4>Mapa del sitio</h4>
+                <ul>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./donacion.html">Donación</a></li>
+                    <li><a href="./proyectos.html">Proyectos</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./nuestroEquipo.html">Nuestro equipo</a></li>
+                </ul>
+            </div>
+            <div class="copyright col-sm-12"> 
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <h4>2020. Fundación Pilotos Voluntarios <br> RIF J-412373374</h5>
+                <h5>Designed by <a href="#"><b>Ivan Telleria</b></a></h4>
+            </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>   
 </body>
 </html>

@@ -1,14 +1,14 @@
-.teamMain .directors h2, .teamMain .fpvDescription h1 {
+.proyectMain h1, .teamMain .directors h2, .teamMain .fpvDescription h1 {
   font-family: "Crimson Text", serif;
   font-size: 2rem;
 }
 
-.teamMain .directors span, .teamMain .directors p, .teamMain .fpvDescription span, .indexMainContainer .poblaciones h3, .indexMainContainer .how2Help h2, .indexMainContainer .necesidad h3, .indexMainContainer .bgDiv .visionSec h2, .indexMainContainer .bgDiv .visionSec h3, .indexMainContainer .pqHacerlo h2, .indexMainContainer .pqHacerlo h3 {
+.proyectMain h2, .teamMain .directors span, .teamMain .directors p, .teamMain .fpvDescription span, .indexMainContainer .poblaciones h3, .indexMainContainer .how2Help h2, .indexMainContainer .necesidad h3, .indexMainContainer .bgDiv .visionSec h2, .indexMainContainer .bgDiv .visionSec h3, .indexMainContainer .pqHacerlo h2, .indexMainContainer .pqHacerlo h3 {
   font-family: "Alike Angular", serif;
   font-size: 1.8rem;
 }
 
-.teamMain .fpvDescription p, .indexMainContainer .poblaciones ul li, .indexMainContainer .how2Help p, .indexMainContainer .how2Help span, .indexMainContainer .necesidad p, .indexMainContainer .bgDiv .visionSec p, .indexMainContainer .pqHacerlo p, .headerContainer .navContainer nav .responsiveUl li a {
+.proyectMain .operations p, .proyectMain .operations span, .teamMain .fpvDescription p, .indexMainContainer .poblaciones ul li, .indexMainContainer .how2Help p, .indexMainContainer .how2Help span, .indexMainContainer .necesidad p, .indexMainContainer .bgDiv .visionSec p, .indexMainContainer .pqHacerlo p, .headerContainer .navContainer nav .responsiveUl li a {
   font-family: "Unna", serif;
   font-size: 1.3rem;
 }
@@ -418,4 +418,64 @@ footer .copyright h5 a {
 .teamMain .iMap iframe {
   width: 100%;
   height: 16rem;
+}
+
+.proyectMain h1 {
+  color: rgb(245, 27, 59);
+}
+.proyectMain h2 {
+  color: rgb(245, 27, 59);
+}
+.proyectMain .carousel-item img {
+  height: 10rem;
+}
+.proyectMain .operations {
+  margin: 2rem auto;
+}
+.proyectMain .operations p, .proyectMain .operations span {
+  margin: 1rem;
+}
+.proyectMain .operations .donationButton {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(245, 27, 59);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(131, 20, 36) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: rgb(241, 231, 196);
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s ease;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.proyectMain .operations .donationButton:focus {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+}
+.proyectMain .operations .donationButton:active {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.proyectMain .operations .donationButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+  transform: translateY(-2px);
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,34 @@
+.proyectMain{
+    h1{
+        @extend %titleStandar;
+        color: map-get($colors, redColor);
+    }
+    h2{
+        @extend %subTitleStandar;
+        color: map-get($colors, redColor);
+    }
+    .carousel-item{
+        img{
+            height: 10rem;
+        }
+    }
+    .operations{
+        margin: 2rem auto;
+        p, span{
+            @extend %textStandar;
+            margin: 1rem;
+        }
+        .donationButton{
+            @include buttonDefault ($bgColor: rgb(245, 27, 59),$letterColor: rgb(241,231,196),$shadowC: rgb(131, 20, 36));
+            &:focus{
+                @include buttonDefaultFocus;
+            }
+            &:active{
+                @include buttonDefaultActive;
+            }
+            &:hover{
+                @include buttonDefaultHover;
+            }
+        }
+    }
+}
