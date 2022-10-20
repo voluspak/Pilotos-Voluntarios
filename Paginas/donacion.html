@@ -61,13 +61,15 @@
             </header>
         </div>
         <hr>
-        <main>
-            <section>
+        <main class="mainDonacion">
+            <section class="donationDesc">
                 <h1>Donación</h1>
+                <img src="../Assets/maracaibo-g27b501ed4_1920.webp" alt="Hombre llevando una carreta de platanos">
                 <p>
                     Al igual que tú, en la FPV somos personas que buscamos ayudar 
                     a los más necesitados en los lugares más remotos.
                 </p>
+                <img src="../Assets/01-monkey-on-heads-Y9P8625-Edit.webp" alt="Niño indígena con un mono sobre su cabeza">
                 <p>
                     Nuestra meta es entregar medicamentos, llevar personal sanitario 
                     y trasladar pacientes en emergencia diariamente a través de 
@@ -83,17 +85,18 @@
                     Tu porte dará esperanza a las poblaciones más aisladas y olvidadas 
                     de nuestra región.
                 </p>
-                <img src="../Assets/maracaibo-g27b501ed4_1920.webp" alt="Hombre llevando una carreta de platanos">
-                <img src="../Assets/01-monkey-on-heads-Y9P8625-Edit.webp" alt="Niño indígena con un mono sobre su cabeza">
                 <div>
                     <p>¡<b>Contactanos</b> para <i>enterarte</i> de cómo nos puedes ayudar!</p>
                     <button class="defaultButton">Contacto</button>
                 </div>
             </section>
-            <div>
-                <section>
-                    <img src="../Assets/niñaEnBasurero.webp" alt="Niña hurgando entre la basura">
-                    <h2>¿<b>Cómo</b> será usada su donación</h2>
+            <div class="bgDiv">
+                <section class="howUse">
+                    <div class="howUse-img">
+                        <img src="../Assets/niñaEnBasurero.webp" alt="Niña hurgando entre la basura">
+                        <h2>¿<b>Cómo</b> será usada su donación?</h2>    
+                    </div>
+                    
                     <p>
                         Con la recaudación, podemos apoyar a pueblos indígenas
                         del Amazona venezolano y comunidades en situación de 
@@ -113,36 +116,40 @@
                     <button class="defaultButton">Donar</button>
                 </section>
             </div>
-            <section>
+            <section class="donationType">
                 <h2>Otro tipo de donaciones</h2>
-                <button>Banco de Medicinas</button>
-                <button>Contribución económica</button>
-                <button>Voluntariado</button>
-                <button>Piloto Voluntario</button>
+                <div class="buttonOrder">
+                    <button>Banco de Medicinas</button>
+                    <button>Contribución económica</button>
+                    <button>Voluntariado</button>
+                    <button>Piloto Voluntario</button>
+                </div>
             </section>
         </main>
 
-        <footer>
-            <h4>Mapa del sitio</h4>
-            <ul>
-                <li><a href="./nuestroEquipo.html">Nuestro equipo</a></li>
-                <li><a href="./donacion.html">Donación</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-            <h5>2020. Fundación Pilotos Voluntarios <br> RIF J-412373374</h5>
-            <h4>Designed by <a href="#"><b>Ivan Telleria</b></a></h4>
-
+        <footer class="row mt-5">
+            <div class="siteMap col-sm-12">
+                <h4>Mapa del sitio</h4>
+                <ul>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./donacion.html">Donación</a></li>
+                    <li><a href="./proyectos.html">Proyectos</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./nuestroEquipo.html">Nuestro equipo</a></li>
+                </ul>
+            </div>
+            <div class="copyright col-sm-12"> 
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <h4>2020. Fundación Pilotos Voluntarios <br> RIF J-412373374</h5>
+                <h5>Designed by <a href="#"><b>Ivan Telleria</b></a></h4>
+            </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>   
 </body>
 </html>

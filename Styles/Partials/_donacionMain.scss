@@ -1,0 +1,108 @@
+.mainDonacion{
+    .donationDesc{
+        h1{
+            @extend %titleStandar;
+            color: map-get($colors, redColor);
+            text-align: left;
+            margin-left: 1.1rem
+        }
+        p{
+            @extend %textStandar;
+        }
+        img{
+            width: 50%;
+            height: 100%;
+            margin: .8rem .4rem;
+            float: right;
+        }
+        div{
+            p{
+                width: 70%;
+                margin: 0 auto;
+            }
+            .defaultButton{
+                @include buttonDefault ($bgColor: rgb(245, 27, 59),$letterColor: rgb(241,231,196),$shadowC: rgb(141, 24, 41));
+                margin: .5rem auto;
+                &:focus{
+                    @include buttonDefaultFocus;
+                }
+                &:active{
+                    @include buttonDefaultActive;
+                }
+                &:hover{
+                    @include buttonDefaultHover;
+                }
+            }
+        }
+    }
+    .bgDiv{
+        @extend %bgDiv;
+        .howUse{
+            .howUse-img{ 
+                img{
+                    width: 90%;
+                    height: 100%;
+                    margin: auto
+                }
+                h2{
+
+                    @extend %subTitleStandar;
+                    color: map-get($colors, lightColor);
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+            p{
+                @extend  %textStandar;
+                color: map-get($colors, lightColor);
+                a{
+                    text-decoration: none;
+                    color: map-get($colors, beigeColor);
+                    &:hover{
+                        color: map-get($colors, lightColor);
+                    }
+                }
+            }
+            .defaultButton{
+                @include buttonDefault ($bgColor: rgb(252, 248, 235),$letterColor: rgb(245, 27, 59),$shadowC: rgb(161, 22, 43));
+                &:focus{
+                    @include buttonDefaultFocus;
+                }
+                &:active{
+                    @include buttonDefaultActive;
+                }
+                &:hover{
+                    @include buttonDefaultHover
+                }
+            }
+        }
+    }
+    .donationType{
+        margin: 1rem auto;
+        h2{
+            @extend %subTitleStandar;
+            color: map-get($colors, redColor);
+        }
+        .buttonOrder{
+            display: flex;
+            flex-flow: row wrap; 
+            justify-content: space-around;
+            margin-top: 3rem;
+            height: 15rem;
+            button{
+                @include buttonDefault ($bgColor: rgb(252, 248, 235),$letterColor: rgb(245, 27, 59),$shadowC: rgb(161, 22, 43));
+                &:focus{
+                    @include buttonDefaultFocus;
+                }
+                &:active{
+                    @include buttonDefaultActive;
+                }
+                &:hover{
+                    @include buttonDefaultHover
+                }
+                width: 8rem;
+                height: 5rem;
+            }
+        }
+    }
+}

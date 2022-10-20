@@ -1,19 +1,19 @@
-.proyectMain h1, .teamMain .directors h2, .teamMain .fpvDescription h1 {
+.mainDonacion .donationDesc h1, .proyectMain h1, .teamMain .directors h2, .teamMain .fpvDescription h1 {
   font-family: "Crimson Text", serif;
   font-size: 2rem;
 }
 
-.proyectMain h2, .teamMain .directors span, .teamMain .directors p, .teamMain .fpvDescription span, .indexMainContainer .poblaciones h3, .indexMainContainer .how2Help h2, .indexMainContainer .necesidad h3, .indexMainContainer .bgDiv .visionSec h2, .indexMainContainer .bgDiv .visionSec h3, .indexMainContainer .pqHacerlo h2, .indexMainContainer .pqHacerlo h3 {
+.mainDonacion .donationType h2, .mainDonacion .bgDiv .howUse .howUse-img h2, .proyectMain h2, .teamMain .directors span, .teamMain .directors p, .teamMain .fpvDescription span, .indexMainContainer .poblaciones h3, .indexMainContainer .how2Help h2, .indexMainContainer .necesidad h3, .indexMainContainer .bgDiv .visionSec h2, .indexMainContainer .bgDiv .visionSec h3, .indexMainContainer .pqHacerlo h2, .indexMainContainer .pqHacerlo h3 {
   font-family: "Alike Angular", serif;
   font-size: 1.8rem;
 }
 
-.proyectMain .operations p, .proyectMain .operations span, .teamMain .fpvDescription p, .indexMainContainer .poblaciones ul li, .indexMainContainer .how2Help p, .indexMainContainer .how2Help span, .indexMainContainer .necesidad p, .indexMainContainer .bgDiv .visionSec p, .indexMainContainer .pqHacerlo p, .headerContainer .navContainer nav .responsiveUl li a {
+.mainDonacion .bgDiv .howUse p, .mainDonacion .donationDesc p, .proyectMain .operations p, .proyectMain .operations span, .teamMain .fpvDescription p, .indexMainContainer .poblaciones ul li, .indexMainContainer .how2Help p, .indexMainContainer .how2Help span, .indexMainContainer .necesidad p, .indexMainContainer .bgDiv .visionSec p, .indexMainContainer .pqHacerlo p, .headerContainer .navContainer nav .responsiveUl li a {
   font-family: "Unna", serif;
   font-size: 1.3rem;
 }
 
-.teamMain .directors {
+.mainDonacion .bgDiv, .teamMain .directors {
   background-color: rgb(245, 27, 59);
   padding: 1rem;
 }
@@ -111,7 +111,7 @@
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition: box-shadow 0.15s, transform 0.15s ease;
   -moz-user-select: none;
@@ -119,7 +119,7 @@
        user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
+  white-space: wrap;
   will-change: box-shadow, transform;
   font-size: 18px;
 }
@@ -201,7 +201,7 @@
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition: box-shadow 0.15s, transform 0.15s ease;
   -moz-user-select: none;
@@ -209,7 +209,7 @@
        user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
+  white-space: wrap;
   will-change: box-shadow, transform;
   font-size: 18px;
 }
@@ -349,7 +349,7 @@ footer .copyright h5 a {
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition: box-shadow 0.15s, transform 0.15s ease;
   -moz-user-select: none;
@@ -357,7 +357,7 @@ footer .copyright h5 a {
        user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
+  white-space: wrap;
   will-change: box-shadow, transform;
   font-size: 18px;
 }
@@ -456,7 +456,7 @@ footer .copyright h5 a {
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition: box-shadow 0.15s, transform 0.15s ease;
   -moz-user-select: none;
@@ -464,7 +464,7 @@ footer .copyright h5 a {
        user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
+  white-space: wrap;
   will-change: box-shadow, transform;
   font-size: 18px;
 }
@@ -476,6 +476,190 @@ footer .copyright h5 a {
   transform: translateY(2px);
 }
 .proyectMain .operations .donationButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.mainDonacion .donationDesc h1 {
+  color: rgb(245, 27, 59);
+  text-align: left;
+  margin-left: 1.1rem;
+}
+.mainDonacion .donationDesc img {
+  width: 50%;
+  height: 100%;
+  margin: 0.8rem 0.4rem;
+  float: right;
+}
+.mainDonacion .donationDesc div p {
+  width: 70%;
+  margin: 0 auto;
+}
+.mainDonacion .donationDesc div .defaultButton {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(245, 27, 59);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(141, 24, 41) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: rgb(241, 231, 196);
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s ease;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: wrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  margin: 0.5rem auto;
+}
+.mainDonacion .donationDesc div .defaultButton:focus {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+}
+.mainDonacion .donationDesc div .defaultButton:active {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.mainDonacion .donationDesc div .defaultButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.mainDonacion .bgDiv .howUse .howUse-img img {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+.mainDonacion .bgDiv .howUse .howUse-img h2 {
+  color: rgb(241, 231, 196);
+  width: 80%;
+  margin: auto;
+}
+.mainDonacion .bgDiv .howUse p {
+  color: rgb(241, 231, 196);
+}
+.mainDonacion .bgDiv .howUse p a {
+  text-decoration: none;
+  color: rgb(222, 208, 179);
+}
+.mainDonacion .bgDiv .howUse p a:hover {
+  color: rgb(241, 231, 196);
+}
+.mainDonacion .bgDiv .howUse .defaultButton {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(252, 248, 235);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(161, 22, 43) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: rgb(245, 27, 59);
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s ease;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: wrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.mainDonacion .bgDiv .howUse .defaultButton:focus {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+}
+.mainDonacion .bgDiv .howUse .defaultButton:active {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.mainDonacion .bgDiv .howUse .defaultButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.mainDonacion .donationType {
+  margin: 1rem auto;
+}
+.mainDonacion .donationType h2 {
+  color: rgb(245, 27, 59);
+}
+.mainDonacion .donationType .buttonOrder {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 3rem;
+  height: 15rem;
+}
+.mainDonacion .donationType .buttonOrder button {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(252, 248, 235);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(161, 22, 43) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: rgb(245, 27, 59);
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s ease;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: wrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  width: 8rem;
+  height: 5rem;
+}
+.mainDonacion .donationType .buttonOrder button:focus {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
+}
+.mainDonacion .donationType .buttonOrder button:active {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.mainDonacion .donationType .buttonOrder button:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(45, 35, 66, 0.3) 0 -3px 0 inset;
   transform: translateY(-2px);
 }/*# sourceMappingURL=styles.css.map */

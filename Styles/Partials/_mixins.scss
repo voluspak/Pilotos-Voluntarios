@@ -18,13 +18,13 @@
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition: box-shadow .15s,transform .15s ease;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
+  white-space: wrap;
   will-change: box-shadow,transform;
   font-size: 18px;
 }
